@@ -1,14 +1,28 @@
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+import * as React from 'react';
+
+import {CssBaseline} from '@mui/material';
+import { ThemeProvider } from '@mui/material';
+import { themeLight, themeDark } from './Components/Theme';
+
 import NavigationBar from './Components/NavigationBar';
+import Home from './Components/Home';
+import DarkModeButton from './Components/DarkModeButton';
 
 function App() {
+
+  const [mode, setMode] = React.useState(false);
+
+  function changeMode() {
+    setMode((prevMode) => !prevMode);
+  }
+
   return (
-    <div className="App">
-      <NavigationBar></NavigationBar>
-    </div>
+    <ThemeProvider theme={mode ? themeLight : themeDark} >
+      <CssBaseline />
+      <NavigationBar />
+      <Home />
+      <DarkModeButton mode={mode} changeMode={changeMode} />
+    </ThemeProvider >
   );
 }
 

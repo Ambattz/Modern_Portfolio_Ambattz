@@ -32,6 +32,8 @@ const themeDark = createTheme({
         },
         text: {
             primary: '#041c32',
+            secondary: '#ffc107',
+
         },
     }
 });

@@ -1,9 +1,10 @@
 import * as React from 'react';
 
-import {CssBaseline} from '@mui/material';
+import { CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 import { themeLight, themeDark } from './Components/Theme';
 
+import './App.css';
 import NavigationBar from './Components/NavigationBar';
 import Home from './Components/Home';
 import DarkModeButton from './Components/DarkModeButton';

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Box, Fab } from '@mui/material';
-import { LightModeIcon, DarkModeIcon } from '@mui/icons-material';
+import { LightModeRounded, DarkModeRounded } from '@mui/icons-material';
 
 export default function DarkModeButton(props) {
     return (
@@ -14,7 +14,7 @@ export default function DarkModeButton(props) {
                     bottom: (theme) => theme.spacing(2),
                     right: (theme) => theme.spacing(2)
                 }}>
-                {props.mode ? <DarkModeIcon color='secondary' /> : <LightModeIcon color='secondary' />}
+                {props.mode ? <DarkModeRounded color='secondary' /> : <LightModeRounded color='secondary' />}
             </Fab>
         </Box>
     );

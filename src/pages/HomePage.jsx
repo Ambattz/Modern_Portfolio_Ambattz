@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Box, Typography } from '@mui/material';
 import Typewriter from 'typewriter-effect';
-function Home() {
+function HomePage() {
     return (
         <Box sx={{
             display: { xs: 'none', md: 'flex' },
@@ -58,4 +58,4 @@ function Home() {
     )
 }
 
-export default Home
+export default HomePage

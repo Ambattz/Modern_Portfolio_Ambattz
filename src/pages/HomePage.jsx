@@ -25,13 +25,13 @@ function HomePage() {
                     <Typography
                         sx={{
                             fontSize: 38,
-                            color: '#4e9f3d',
+                            color: 'secondary.main',
                             pr: 1
                         }}>I'm</Typography>
                     <Typography
                         sx={{
                             fontSize: 38,
-                            color: 'text.secondary',
+                            color: 'primary.main',
                         }}>
                         <Typewriter
                             options={{
@@ -50,14 +50,14 @@ function HomePage() {
                     <Typography
                         sx={{
                             fontSize: 18,
-                            color: '#4e9f3d',
+                            color: 'secondary.main',
 
                         }}>A high-yielding &nbsp;
                     </Typography>
                     <Typography
                         sx={{
                             fontSize: 23,
-                            color: 'text.secondary',
+                            color: 'primary.main',
 
                         }}>IT GEEK
                     </Typography>
@@ -81,13 +81,13 @@ function HomePage() {
                     <Typography
                         sx={{
                             fontSize: 86,
-                            color: '#4e9f3d',
+                            color: 'secondary.main',
                             pr: 3
                         }}>I'm </Typography>
                     <Typography
                         sx={{
                             fontSize: 86,
-                            color: 'text.secondary',
+                            color: 'primary.main',
                         }}>
                         <Typewriter
                             options={{
@@ -106,14 +106,14 @@ function HomePage() {
                     <Typography
                         sx={{
                             fontSize: 20,
-                            color: '#4e9f3d',
+                            color: 'secondary.main',
 
                         }}>A high-yielding &nbsp;
                     </Typography>
                     <Typography
                         sx={{
                             fontSize: 30,
-                            color: 'text.secondary',
+                            color: 'primary.main',
 
                         }}>IT GEEK
                     </Typography>

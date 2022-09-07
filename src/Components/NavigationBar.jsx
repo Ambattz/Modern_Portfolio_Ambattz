@@ -166,9 +166,9 @@ const NavigationBar = () => {
                                 title="Alvin Ambattu"
                                 arrow
                                 TransitionComponent={Fade}
-                                TransitionProps={{ timeout: 400 }}>
+                                TransitionProps={{ timeout: 200 }}>
                                 <Avatar
-                                    sx={{ width: 75, height: 75 }}
+                                    sx={{ width: 65, height: 65 }}
                                     alt="Alvin Ambattu"
                                     src={Avathar}
                                     variant="rounded"

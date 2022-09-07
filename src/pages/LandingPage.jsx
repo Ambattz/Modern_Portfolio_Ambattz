@@ -3,7 +3,7 @@ import React from 'react'
 import { CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 // Custom Imports
-import { themeLight, themeDark } from '../helper/directoryHelper';
+import { ThemeLight, ThemeDark } from '../helper/directoryHelper';
 import { HomePage, NavigationBar, DarkModeButton } from '../helper/directoryHelper';
 
 const LandingPage = () => {
@@ -15,12 +15,12 @@ const LandingPage = () => {
     }
 
     return (
-        <ThemeProvider theme={mode ? themeLight : themeDark} >
+        <ThemeProvider theme={mode ? ThemeLight : ThemeDark} >
             <CssBaseline />
             <NavigationBar />
             <HomePage />
             <DarkModeButton mode={mode} changeMode={changeMode} />
-        </ThemeProvider >
+        </ThemeProvider>
     )
 }
 

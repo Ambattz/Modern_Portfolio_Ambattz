@@ -7,16 +7,14 @@ export default function MenuButton(props) {
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
             <Fab
                 onClick={props.onClick}
-                color="primary"
                 aria-label="edit"
                 sx={{
-                    display: { xs: 'flex', md: 'none' },
                     position: "fixed",
                     bottom: (theme) => theme.spacing(2),
                     right: (theme) => theme.spacing(2)
                 }}>
-                {props.state ? <MenuOpen color='secondary' /> : <Menu color='secondary' />}
+                {props.state ? <MenuOpen /> : <Menu />}
             </Fab>
-        </Box >
+        </Box>
     );
 }

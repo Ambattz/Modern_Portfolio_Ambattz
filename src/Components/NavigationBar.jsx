@@ -37,29 +37,30 @@ const NavigationBar = () => {
             }}>
                 <Container maxWidth="lg">
                     <Toolbar disableGutters>
+                        {/* XS Device component */}
                         <MotionPhotosAuto
                             titleAccess="Alvin Logo"
                             fontSize='large'
-                            sx={{ display: { xs: 'none', md: 'flex' }, mr: 0.5, color: "#041c32" }}
+                            sx={{ display: { xs: 'flex', md: 'none' } }}
                         />
                         <Typography
-                            variant="h6"
+                            variant="h5"
                             noWrap
                             component="a"
                             href="/"
                             sx={{
-                                mr: 3,
-                                display: { xs: 'none', md: 'flex' },
+                                display: { xs: 'flex', md: 'none' },
+                                flexGrow: 1,
                                 fontFamily: 'cursive',
                                 fontWeight: 800,
                                 letterSpacing: '.2rem',
-                                color: "#041c32",
+                                color: "text.primary",
                                 textDecoration: 'none',
                             }}
                         >
                             mbattz
                         </Typography>
-                        <Box sx={{ color: "#041c32", flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <MenuButton
                                 state={Boolean(anchorElNav)}
                                 onClick={handleOpenNavMenu}
@@ -92,44 +93,56 @@ const NavigationBar = () => {
                                 {Object.entries(pagesInfo).map(([pageName, pageIcon]) => (
                                     <MenuItem key={pageName} onClick={handleCloseNavMenu} sx={{
                                         "&:hover": {
-                                            color: "primary.main",
-                                            backgroundColor: "primary.contrastText",
                                             cursor: "default",
                                             borderRadius: 2,
                                         }
                                     }}>
                                         {pageIcon}
-                                        <Typography textAlign="center" sx={{ ml: 1, color: "#041c32", }}>
+                                        <Typography textAlign="center" sx={{ ml: 1 }}>
                                             {pageName}
                                         </Typography>
                                     </MenuItem>
                                 ))}
                             </Menu>
                         </Box>
+                        <Box sx={{ display: { xs: 'flex', md: 'none' }, flexGrow: 0, ml: 2 }}>
+                            <Tooltip
+                                title="Alvin Ambattu"
+                                arrow
+                                TransitionComponent={Fade}
+                                TransitionProps={{ timeout: 400 }}>
+                                <Avatar
+                                    sx={{ width: 50, height: 50 }}
+                                    alt="Alvin Ambattu"
+                                    src={Avathar}
+                                    variant="rounded"
+                                />
+                            </Tooltip>
+                        </Box>
+                        {/* MD Device component */}
                         <MotionPhotosAuto
                             titleAccess="Alvin Logo"
                             fontSize='large'
-                            sx={{ display: { xs: 'flex', md: 'none' }, color: "#041c32" }}
-
+                            sx={{ display: { xs: 'none', md: 'flex' }, mr: 0.5 }}
                         />
                         <Typography
-                            variant="h5"
+                            variant="h6"
                             noWrap
                             component="a"
                             href="/"
                             sx={{
-                                display: { xs: 'flex', md: 'none' },
-                                flexGrow: 1,
+                                mr: 3,
+                                display: { xs: 'none', md: 'flex' },
                                 fontFamily: 'cursive',
                                 fontWeight: 800,
                                 letterSpacing: '.2rem',
-                                color: "#041c32",
+                                color: "text.primary",
                                 textDecoration: 'none',
                             }}
                         >
                             mbattz
                         </Typography>
-                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, color: "#041c32" }}>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {Object.entries(pagesInfo).map(([pageName, pageIcon]) => (
                                 <Button
                                     key={pageName}
@@ -137,10 +150,8 @@ const NavigationBar = () => {
                                     onClick={handleCloseNavMenu}
                                     size="medium"
                                     sx={{
-                                        my: 2, color: "#041c32", display: 'block',
+                                        my: 2, display: 'block',
                                         "&:hover": {
-                                            color: "#ffc107",
-                                            backgroundColor: "#041c32",
                                             cursor: "default",
                                         },
                                     }}
@@ -150,24 +161,24 @@ const NavigationBar = () => {
 
                             ))}
                         </Box>
-                        <Box sx={{ flexGrow: 0, ml: 2 }}>
+                        <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 0, ml: 2 }}>
                             <Tooltip
                                 title="Alvin Ambattu"
                                 arrow
                                 TransitionComponent={Fade}
                                 TransitionProps={{ timeout: 400 }}>
                                 <Avatar
+                                    sx={{ width: 75, height: 75 }}
                                     alt="Alvin Ambattu"
                                     src={Avathar}
-                                    sx={{ width: 50, height: 50 }}
                                     variant="rounded"
                                 />
                             </Tooltip>
                         </Box>
                     </Toolbar>
                 </Container>
-            </AppBar >
-        </Grid >
+            </AppBar>
+        </Grid>
     );
 };
 export default NavigationBar;

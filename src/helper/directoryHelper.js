@@ -1,7 +1,8 @@
 // Style directory helper
 import IndexStyle from '../styles/index.css';
 import AppStyle from '../styles/App.css';
-import { themeLight, themeDark } from '../styles/Theme';
+import ThemeDark from '../styles/ThemeDark';
+import ThemeLight from '../styles/ThemeLight';
 // Asset directory helper
 import Avathar from '../assets/Images/avathar.jpg'
 // Constant directory helper
@@ -16,7 +17,7 @@ import HomePage from '../pages/HomePage';
 
 // Directory exports
 export {
-    IndexStyle, AppStyle, themeLight, themeDark,
+    IndexStyle, AppStyle, ThemeLight, ThemeDark,
     Avathar,
     NavigationBar, DarkModeButton, MenuButton,
     LandingPage, HomePage,

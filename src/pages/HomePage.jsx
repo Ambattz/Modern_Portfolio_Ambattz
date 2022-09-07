@@ -7,6 +7,7 @@ import Typewriter from 'typewriter-effect';
 function HomePage() {
     return (
         <React.Fragment>
+            {/* XS Device component */}
             <Box sx={{
                 display: { xs: 'flex', md: 'none' },
                 width: 'auto',
@@ -23,13 +24,13 @@ function HomePage() {
                     justifyContent="center">
                     <Typography
                         sx={{
-                            fontSize: 40,
+                            fontSize: 38,
                             color: '#4e9f3d',
                             pr: 1
                         }}>I'm</Typography>
                     <Typography
                         sx={{
-                            fontSize: 40,
+                            fontSize: 38,
                             color: 'text.secondary',
                         }}>
                         <Typewriter
@@ -48,20 +49,21 @@ function HomePage() {
                     justifyContent="center">
                     <Typography
                         sx={{
-                            fontSize: 15,
+                            fontSize: 18,
                             color: '#4e9f3d',
 
                         }}>A high-yielding &nbsp;
                     </Typography>
                     <Typography
                         sx={{
-                            fontSize: 20,
+                            fontSize: 23,
                             color: 'text.secondary',
 
                         }}>IT GEEK
                     </Typography>
                 </Box>
-            </Box >
+            </Box>
+            {/* MD Device component */}
             <Box sx={{
                 display: { xs: 'none', md: 'flex' },
                 width: 'auto',
@@ -78,13 +80,13 @@ function HomePage() {
                     justifyContent="center">
                     <Typography
                         sx={{
-                            fontSize: 100,
+                            fontSize: 86,
                             color: '#4e9f3d',
                             pr: 3
                         }}>I'm </Typography>
                     <Typography
                         sx={{
-                            fontSize: 100,
+                            fontSize: 86,
                             color: 'text.secondary',
                         }}>
                         <Typewriter
@@ -116,7 +118,7 @@ function HomePage() {
                         }}>IT GEEK
                     </Typography>
                 </Box>
-            </Box >
+            </Box>
         </React.Fragment>
     )
 }

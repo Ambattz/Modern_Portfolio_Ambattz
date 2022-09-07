@@ -7,14 +7,13 @@ export default function DarkModeButton(props) {
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
             <Fab
                 onClick={props.changeMode}
-                color="primary"
                 aria-label="edit"
                 sx={{
                     position: "fixed",
                     bottom: (theme) => theme.spacing(2),
                     left: (theme) => theme.spacing(2)
                 }}>
-                {props.mode ? <DarkModeRounded color='secondary' /> : <LightModeRounded color='secondary' />}
+                {props.mode ? <DarkModeRounded /> : <LightModeRounded />}
             </Fab>
         </Box>
     );

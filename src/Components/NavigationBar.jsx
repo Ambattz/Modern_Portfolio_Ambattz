@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
+
 // Material UI Imports
 import { Grid, Box, Container } from '@mui/material';
 import { AppBar, Toolbar } from '@mui/material';
@@ -144,20 +146,23 @@ const NavigationBar = () => {
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {Object.entries(pagesInfo).map(([pageName, pageIcon]) => (
-                                <Button
-                                    key={pageName}
-                                    startIcon={pageIcon}
-                                    onClick={handleCloseNavMenu}
-                                    size="medium"
-                                    sx={{
-                                        my: 2, display: 'block',
-                                        "&:hover": {
-                                            cursor: "default",
-                                        },
-                                    }}
-                                >
-                                    {pageName}
-                                </Button>
+                                <Link to={`/${pageName.toLowerCase()}`}>
+                                    <Button
+                                        key={pageName}
+                                        startIcon={pageIcon}
+                                        onClick={handleCloseNavMenu}
+                                        size="medium"
+                                        sx={{
+                                            my: 2, display: 'block',
+                                            "&:hover": {
+                                                cursor: "default",
+                                            },
+                                        }}
+                                    >
+
+                                        {pageName}
+                                    </Button>
+                                </Link>
 
                             ))}
                         </Box>
@@ -178,7 +183,7 @@ const NavigationBar = () => {
                     </Toolbar>
                 </Container>
             </AppBar>
-        </Grid>
+        </Grid >
     );
 };
 export default NavigationBar;

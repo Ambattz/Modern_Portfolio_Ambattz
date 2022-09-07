@@ -3,19 +3,19 @@ import { createTheme } from '@mui/material/styles';
 const themeLight = createTheme({
     palette: {
         primary: {
-            main: '#032D3C',
+            main: '#42855B',
             contrastText: '#F5F5F5'
         },
         secondary: {
-            main: '#8C7676',
+            main: '#032D3C',
         },
         background: {
             default: '#F5F5F5',
-            paper: '#032D3C',
+            paper: '#42855B',
         },
         text: {
             primary: '#F5F5F5',
-            secondary: '#8C7676',
+            secondary: '#032D3C',
 
         },
     },
@@ -24,9 +24,9 @@ const themeLight = createTheme({
             styleOverrides: {
                 root: {
                     color: '#F5F5F5',
-                    background: '#032D3C',
+                    background: '#42855B',
                     "&:hover": {
-                        color: '#032D3C',
+                        color: '#42855B',
                         background: '#F5F5F5'
                     }
                 }
@@ -36,10 +36,10 @@ const themeLight = createTheme({
             styleOverrides: {
                 root: {
                     color: '#F5F5F5',
-                    background: '#032D3C',
+                    background: '#42855B',
                     "&:hover": {
                         color: '#F5F5F5',
-                        background: '#032D3C'
+                        background: '#42855B'
                     }
                 }
             }
@@ -48,9 +48,9 @@ const themeLight = createTheme({
             styleOverrides: {
                 root: {
                     color: '#F5F5F5',
-                    background: '#032D3C',
+                    background: '#42855B',
                     "&:hover": {
-                        color: '#032D3C',
+                        color: '#42855B',
                         background: '#F5F5F5'
                     }
                 }

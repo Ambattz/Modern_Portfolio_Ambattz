@@ -13,12 +13,14 @@ import MenuButton from '../components/MenuButton';
 // Pages directory helper
 import LandingPage from '../pages/LandingPage';
 import HomePage from '../pages/HomePage';
-
+import ProfilePage from '../pages/ProfilePage';
+import ExpertisePage from '../pages/ExpertisePage';
+import ContactPage from '../pages/ContactPage';
 
 // Directory exports
 export {
     IndexStyle, AppStyle, ThemeLight, ThemeDark,
     Avathar,
     NavigationBar, DarkModeButton, MenuButton,
-    LandingPage, HomePage,
+    LandingPage, HomePage, ProfilePage, ExpertisePage, ContactPage
 };
